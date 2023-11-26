@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Mukta&family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@300;400;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:Poppins,sans-serif;
+}
+
+body{
+  margin: 20px;
+  height: 1500px;
+
+}
+
+.Wrapper{
+  width: 350px;
+  height: 770px;
+  background:#FFFF54 ;
+  border-radius: 10px;
+  border: solid 1px;
+}
+
+.Baslik{
+  text-align: center;
+  padding: 18px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+.ilk{
+  padding: 20px;
+  display: flex;
+  font-size: 25px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.ikinci{
+  padding: 20px;
+  display: flex;
+  font-size: 25px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.ucuncu{
+  padding: 20px;
+  display: flex;
+  font-size: 25px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.Dakika{
+  display:flex;
+  flex-direction: column;
+  font-size:30px;
+}
+.Gb{
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.Tl{
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.Dakika{
+  font-size:30px;
+}
+
+#Vodafone{
+  color: red;
+  text-decoration: underline;
+  font-size: 45px;
+}
+
+.resim{
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  margin: 10px;
+}
+
+button:hover(){
+  background: #ffdf06;
+}
