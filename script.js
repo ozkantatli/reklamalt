@@ -1,12 +1,19 @@
-import domtoimage from 'dom-to-image';
+var node = document.getElementById("node");
 
-var node = document.getElementById('Wrapper');
-var btn = document.getElementById('button');
+function htmltoimg(){
+    domtoimage.toPng(node)
+    .then(function (dataUrl) {
+        document.getElementById('showImg').src=dataUrl;
+        imgUrl = dataUrl;
+    })
+    .catch(function (error) {
+        console.error('oops, something went wrong!', error);
+    }); 
+}
 
-btn.onclick = function(){
-  node.innerHTML = "im an image now"
-  domtoimage.toPng(document.getElementById('Wrapper'))
-  .then(function(blob){
-      window.saveAs(blob,'image.png')
-    });
+function download() {
+  var a = document.createElement('a');
+  a.href = imgUrl;
+  a.download = "htmltoimg.png";
+  a.click();
 }

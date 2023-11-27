@@ -7,7 +7,8 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="Wrapper">
+    <div class="contaier">
+    <div id="node">
       <div class="Baslik"><span id="Vodafone">Vodafone</span> Efsane Tarifeleri Kaçırma</div>
       <hr>
       <div class="ilk">
@@ -26,14 +27,22 @@
         <div class="Gb">60 <span>GB</span></div>
         <div class="Dakika">1000 Dk 250 Sms</div>
         <div class="Tl">207 ₺</div>
-      </div>
-      <hr>
-        <div class="resim">
-       <img class="img" src="vodafone Arka Planı Silindi.png" alt="" height="100px">
-        </div>
-   </div> 
-    <button type="button">Download image</button>
+    </div>
+    <hr>
+    <div class="resim">
+    <img class="img" src="vodafone Arka Planı Silindi.png" alt="" height="100px">
+    </div>
+    </div> 
+ </div> 
+  <div class="ortalan">
+  <button type="button" class="myButton" onclick="htmltoimg()">Html to image</button>
+    <button type="button" class="download" onclick="download()">Download image</button>
+  </div>
+  <img src="" id="showImg">
+
     <!--script -->
-  <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
   </body>
+    
 </html>

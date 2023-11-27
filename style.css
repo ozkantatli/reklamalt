@@ -8,11 +8,11 @@
 
 body{
   margin: 20px;
-  height: 1500px;
-
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-.Wrapper{
+#node{
   width: 350px;
   height: 770px;
   background:#FFFF54 ;
@@ -84,10 +84,48 @@ body{
   justify-content: center;
 }
 
-button{
+.ortalan{
+    display: flex;
+    flex-direction: column;
+  }
+.myButton{
+  position: relative;
+  color: white;
+  width: 150px;
+  height: 60px;
   margin: 10px;
+  background: rebeccapurple;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  border:solid 1px ;
 }
 
-button:hover(){
-  background: #ffdf06;
+.myButton:hover{
+  background: firebrick;
+}
+
+.container{
+    display: flex;
+  }
+
+.download{
+    position: relative;
+    color: white;
+    width: 150px;
+    height: 60px;
+    margin-left: 10px;
+    background: rebeccapurple;
+    font-size: 16px;
+    border-radius: 10px;
+    border:solid 1px;
+  }
+
+.download:hover{
+    background: firebrick;
+  }
+#showimg{
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 20px;
 }
